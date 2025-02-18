@@ -42,7 +42,7 @@
             <div class="navbar bg-base-100 bg-[#FFF9F4]">
                 <div class="navbar-start bg-[#FFF9F4]">
                     <a class="btn btn-ghost text-xl font-bold text-black"><img src="resources/logo-header.png"
-                            alt="">Browse<span class="text-yellow-500">4</span>Pets</a>
+                            alt=""><span class="invisible md:visible">Browse<span class="text-yellow-500">4</span>Pets</a></span>
                 </div>
                 <div class="navbar-center hidden lg:flex bg-[#FFF9F4]">
                     <ul class="menu menu-horizontal px-1 bg-[#FFF9F4] text-black">
@@ -92,6 +92,8 @@
                         <button class="btn btn-warning">Find A Pet</button>
                     </div>
                 </div>
+                <!-- ball  -->
+                <div class="w-[75px] h-[75px] rounded-full bg-red-700  translate-x-10 animate-bounce"></div>
             </div>
         </section>
         <!-- card section  -->
@@ -306,6 +308,24 @@
 
             <div></div>
         </section>
+        <!-- Personal section : donation  -->
+         <section class="grid grid-cols-1 md:grid-cols-2 bg-[#DAFFEF]">
+            <!-- image container  -->
+            <div class="w-1/2">
+                <img src="resources/cute-dog-mid.png" alt="" class="h-full p-10">
+            </div>
+            <!-- Text & card container  -->
+            <div class="bg-[##D0FFD6] text-black flex flex-col justify-center items-center gap-y-8">
+                <h1 class="font-bold text-black text-5xl">Donate For Pets</h1>
+                <!-- card-container  -->
+                 <div class="grid grid-cols-2 gap-10">
+                     <div class="bg-orange-500 px-16 py-4 rounded-md hover:bg-yellow-400">5$</div>
+                     <div class="bg-orange-500 px-16 py-4 rounded-md  hover:bg-yellow-400">10$</div>
+                     <div class="bg-orange-500 px-16 py-4 rounded-md  hover:bg-yellow-400">15$</div>
+                     <div class="bg-orange-500 px-16 py-4 rounded-md  hover:bg-yellow-400">25$</div>
+                 </div>
+            </div>
+         </section>
         <!-- low price section  -->
         <section class="flex flex-col text-black">
             <h1 class="text-2xl font-bold">Every Day Low Prices</h1>
@@ -347,10 +367,11 @@
                 <img src="resources/cute-pet-mid.png" alt="">
             </div>
             <!-- text container  -->
-            <div class="flex flex-col justify-start items-center py-8 px-4 gap-y-2">
+            <div class="flex flex-col justify-start  md:items-start items-center py-8 px-4 gap-y-2">
                 <h3 class="text-2xl">Get Pawsome News!</h3>
                 <p class="text-[#111111]">Exclusive training tips, ticks, product deals and more.</p>
                 <input type="email" placeholder="Your Email" class="w-2/3 p-4 bg-[#FFFFFF] self-start rounded-md">
+                <button class="btn btn-warning">Subscribe</button>
             </div>
         </section>
     </main>
